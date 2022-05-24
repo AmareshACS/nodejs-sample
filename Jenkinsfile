@@ -9,9 +9,9 @@ pipeline {
         }
        stage('deploy') {
             steps {
-                sh "rm -rf  /var/www/node-app/*
-                    cp helloworld.js /var/www/node-app
-                    node /var/www/node-app/helloworld.js"
+                sh "rm -rf  /var/www/node-app/*"
+                sh "cp helloworld.js /var/www/node-app"
+                sh "node /var/www/node-app/helloworld.js"
             }
         }
     }
