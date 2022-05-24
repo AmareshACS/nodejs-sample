@@ -12,8 +12,6 @@ pipeline {
                 sh "rm -rf  /var/www/node-app/*"
                 sh "cp helloworld.js /var/www/node-app"
                 sh "node /var/www/node-app/helloworld.js &"
-                sh "nohup node /var/www/node-app/helloworld.js & echo "hi""
-                sh "node /var/www/node-app/helloworld.js &"
             }
         }
     }
